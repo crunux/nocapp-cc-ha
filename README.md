@@ -7,8 +7,8 @@ handler email service to send the logs with level high urgent.
 
 ### dev
 
-1. Clonar el archivo .env.template a .env
-2. Configurar las variable de entorno
+1. Clone file .env.template a .env
+2. Config environment variable
 
 ```env
 PORT=
@@ -32,7 +32,7 @@ POSTGRES_PASS=123456
 POSTGRES_DB=NOC
 ```
 
-3.Ejecutar
+3.Run
 
 ``` sh
 yarn install or yarn
