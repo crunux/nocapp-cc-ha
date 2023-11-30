@@ -24,14 +24,13 @@ export class ServerApp {
         console.log("Server Started.!");
 
         //Enviar email
-        // new SendEmailLogs(
-        //     emailService,
-        //     repository
-        // ).execute(['joancruz0502@hotmail.com', 'joancruzccrc@gmail.com', 'animej48@gmail.com'])
-        //emailService.sendEmailWithFileSystemLogs(['joancruz0502@hotmail.com', 'joancruzccrc@gmail.com', 'animej48@gmail.com'])
+        new SendEmailLogs(
+            emailService,
+            fsLogRepository
+        ).execute(['joancruz0502@hotmail.com', 'joancruzccrc@gmail.com', 'animej48@gmail.com'])
+        emailService.sendEmailWithFileSystemLogs(['joancruz0502@hotmail.com', 'joancruzccrc@gmail.com', 'animej48@gmail.com'])
 
-        // const logs = await logRepository.getLogs(LogSeverityLevel.low)
-        // console.log(logs);
+
 
         CronService.createJob(
             '*/5 * * * * *',
