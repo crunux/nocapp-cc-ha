@@ -2,8 +2,7 @@
 
 ## This is app network operation center
 
-Where we use Clean Code & Hexagonal Adquitecture, also we use Dependecy Injection to use multiple databases and filesistem to store the logs,
-handler email service to send the logs with level high urgent.
+CronJob in express where we use Clean Code & Hexagonal Architecture, also uses Dependency Injection to use multiple databases such as PostgreSQL(PrismaORM), MongoDB(MONGOOSE), and Local with FileSystem to store the logs, email service to send the logs with high-level urgent
 
 ### dev
 
