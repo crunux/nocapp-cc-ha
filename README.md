@@ -37,6 +37,20 @@ POSTGRES_DB=NOC
 yarn install or yarn
 ```
 
+4.Up container for database
+
+```sh
+docker-compose up -d
+```
+
+5.Execute prisma create database in postgres
+
+```sh
+npx prisma migrate dev
+```
+
+6.Run server
+
 ```sh
 yarn dev
 ```
