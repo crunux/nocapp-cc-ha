@@ -54,3 +54,7 @@ npx prisma migrate dev
 ```sh
 yarn dev
 ```
+
+## Get-Gmail-Key
+
+[Google AppPAsswords](https://myaccount.google.com/u/0/apppasswords)
