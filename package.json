@@ -4,11 +4,12 @@
   "description": "App Network Operation Center",
   "main": "index.ts",
   "scripts": {
-    "dev": "tsnd --respawn src/app.ts",
+    "dev": "tsnd --respawn --clear src/app.ts",
     "build": "rimraf ./dist && tsc",
     "start": "yarn build && node dist/app.js",
+    "docker:test": "docker-compose -f docker-compose.test.yml --env-file .env.test up -d",
     "test": "jest",
-    "test:watch": "jest --watch",
+    "test:watch": "yarn docker:test && jest --watch",
     "test:coverage": "jest --coverage"
   },
   "author": "crunux",
