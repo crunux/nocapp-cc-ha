@@ -4,6 +4,7 @@ import mongoose from "mongoose"
 
 
 describe('log.model.test.ts', () => {
+
     beforeAll(async () => {
         await MongoDatabase.connect({
             mongoURL: envs.MONGO_URI,
@@ -25,12 +26,13 @@ describe('log.model.test.ts', () => {
 
         const log = await LogModel.create(logData);
 
-        console.log(log);
         expect(log).toEqual(expect.objectContaining({
             ...logData,
             createdAt: expect.any(Date),
             id: expect.any(String)
         }))
+
+        await LogModel.deleteOne({ id: log.id })
     })
 
     test('should return the schema object', () => {

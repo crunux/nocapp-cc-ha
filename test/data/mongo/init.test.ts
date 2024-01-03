@@ -19,7 +19,7 @@ describe('init MongoDB', () => {
 
     test('should throw an error', async () => {
         try {
-            const connect = await MongoDatabase.connect({ mongoURL: 'mongodb://alumnno:123456@10.0.0.3:27017/?authMechanism=DEFAULT', dbName: process.env.MONGO_DB_NAME! });
+            const connect = await MongoDatabase.connect({ mongoURL: 'mongodb://alumno:123456@10.0.0.5:27017/?authMechanism=DEFAULT', dbName: process.env.MONGO_DB_NAME! });
             expect(connect).toBe(false);
         } catch (error) {
             expect(error).toBeTruthy();
