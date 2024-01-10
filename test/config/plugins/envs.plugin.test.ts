@@ -1,4 +1,8 @@
 import { envs } from '../../../src/config/plugins/envs.plugin'
+
+
+
+
 describe('envs.plugin.ts', () => {
 
 
@@ -10,10 +14,10 @@ describe('envs.plugin.ts', () => {
             MAIL_SECRET_KEY: 'fkjoxlnpqttrayfg',
             MAIL_SERVICE: 'gmail',
             MONGO_DB_NAME: 'NOC-TEST',
-            MONGO_URI: 'mongodb://alumno:123456@10.0.0.7:27017/?authMechanism=DEFAULT',
+            MONGO_URI: 'mongodb://alumno:123456@10.0.0.4:27017/?authMechanism=DEFAULT',
             MONGO_USER: 'alumno',
             MONGO_PASS: '123456',
-            POSTGRES_URL: 'postgresql://alumno:123456@10.0.0.7:5432/NOC-TEST',
+            POSTGRES_URL: 'postgresql://alumno:123456@10.0.0.4:5432/NOC-TEST',
             POSTGRES_USER: 'alumno',
             POSTGRES_PASS: '123456',
             POSTGRES_DB: 'NOC-TEST'
