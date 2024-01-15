@@ -14,13 +14,13 @@ describe('envs.plugin.ts', () => {
             MAIL_SECRET_KEY: 'fkjoxlnpqttrayfg',
             MAIL_SERVICE: 'gmail',
             MONGO_DB_NAME: 'NOC-TEST',
-            MONGO_URI: 'mongodb://alumno:123456@10.0.0.4:27017/?authMechanism=DEFAULT',
+            MONGO_URI: 'mongodb://alumno:123456@10.0.0.10:27017/?authMechanism=DEFAULT',
             MONGO_USER: 'alumno',
             MONGO_PASS: '123456',
-            POSTGRES_URL: 'postgresql://alumno:123456@10.0.0.4:5432/NOC-TEST',
+            POSTGRES_URL: 'postgresql://alumno:123456@10.0.0.10:5432/NOC_TEST',
             POSTGRES_USER: 'alumno',
             POSTGRES_PASS: '123456',
-            POSTGRES_DB: 'NOC-TEST'
+            POSTGRES_DB: 'NOC_TEST'
 
         })
     })
